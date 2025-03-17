@@ -1,0 +1,35 @@
+{
+    "name": "skywars",
+    "version": "1.0.0",
+    "description": "Multiplayer blockchain-based 3D plane game",
+    "scripts": {
+      "install:all": "npm install && npm run install:backend && npm run install:frontend",
+      "install:backend": "cd backend && npm install",
+      "install:frontend": "cd frontend && npm install",
+      "start:backend": "cd backend && npm run start",
+      "start:frontend": "cd frontend && npm run dev",
+      "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+      "build": "cd frontend && npm run build",
+      "test": "npm run test:contracts && npm run test:backend",
+      "test:contracts": "cd contracts && npx hardhat test",
+      "test:backend": "cd backend && npm test",
+      "deploy:contracts": "cd contracts && npx hardhat run scripts/deploy.js --network localhost",
+      "chain": "cd contracts && npx hardhat node"
+    },
+    "keywords": [
+      "blockchain",
+      "game",
+      "multiplayer",
+      "three.js",
+      "web3",
+      "ethereum"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+      "concurrently": "^8.2.2"
+    },
+    "engines": {
+      "node": ">=16.0.0"
+    }
+  }

@@ -1,0 +1,493 @@
+
+{
+    "name": "F-16 Fighting Falcon #042",
+    "description": "A legendary multirole fighter aircraft known for its agility and versatility. This particular model has seen battle in numerous campaigns and features enhanced avionics.",
+    "image": "ipfs://QmXwdi3SeQRFA9XQbwzZs1kT7AZ1zYTMRzmbYk1zSXKKgH/f16_042.png",
+    "animation_url": "ipfs://QmRVrMwPdYANXfbxpo9C8eCGKijNX9fTVf9EKBkKbq1j3a/f16_042.glb",
+    "external_url": "https://skywars.example.com/aircraft/042",
+    "background_color": "1A2B3C",
+    
+   
+    "attributes": [
+      {
+        "trait_type": "Aircraft Model",
+        "value": "F-16C"
+      },
+      {
+        "trait_type": "Manufacturer",
+        "value": "General Dynamics"
+      },
+      {
+        "trait_type": "Class",
+        "value": "Fighter"
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Rare",
+        "rarity_value": 4
+      },
+      {
+        "trait_type": "Level",
+        "value": 8,
+        "max_value": 50
+      },
+      {
+        "trait_type": "Health",
+        "value": 425,
+        "max_value": 1000
+      },
+      {
+        "trait_type": "Speed",
+        "value": 780,
+        "max_value": 1000,
+        "display_type": "boost_number"
+      },
+      {
+        "trait_type": "Handling",
+        "value": 840,
+        "max_value": 1000,
+        "display_type": "boost_number"
+      },
+      {
+        "trait_type": "Acceleration",
+        "value": 800,
+        "max_value": 1000,
+        "display_type": "boost_number"
+      },
+      {
+        "trait_type": "Defense",
+        "value": 350,
+        "max_value": 1000,
+        "display_type": "boost_number"
+      },
+      {
+        "trait_type": "Weapon Slots",
+        "value": 4,
+        "max_value": 8
+      },
+      {
+        "trait_type": "Utility Slots",
+        "value": 3,
+        "max_value": 6
+      },
+      {
+        "trait_type": "Experience",
+        "value": 1845,
+        "display_type": "number"
+      },
+      {
+        "trait_type": "Production Date",
+        "value": 1672531200,
+        "display_type": "date"
+      }
+    ],
+    
+    
+    "skywars_properties": {
+      "model_id": "f16c",
+      
+      
+      "dimensions": {
+        "length": 15.09,
+        "wingspan": 9.96,
+        "height": 5.09,
+        "unit": "meters"
+      },
+      
+      
+      "customizations": {
+        "skin": "desert_camo_03",
+        "decals": ["squadron_eagle", "kill_marks_8"],
+        "special_effects": ["afterburner_blue"]
+      },
+      
+      
+      "upgrades": {
+        "engine": {
+          "level": 3,
+          "name": "F110-GE-132 Enhanced",
+          "effects": [
+            {"attribute": "speed", "bonus": 55},
+            {"attribute": "acceleration", "bonus": 70}
+          ]
+        },
+        "avionics": {
+          "level": 2,
+          "name": "AN/APG-83 AESA",
+          "effects": [
+            {"attribute": "targeting_range", "bonus": 30},
+            {"attribute": "radar_detection", "bonus": 25}
+          ]
+        },
+        "armor": {
+          "level": 1,
+          "name": "Reinforced Cockpit",
+          "effects": [
+            {"attribute": "health", "bonus": 75}
+          ]
+        },
+        "weapon_systems": {
+          "level": 2,
+          "name": "Enhanced Weapon Pylons",
+          "effects": [
+            {"attribute": "weapon_slots", "bonus": 1}
+          ]
+        }
+      },
+      
+      
+      "loadout": {
+        "weapons": [
+          {
+            "slot": 0,
+            "id": "aim9x",
+            "name": "AIM-9X Sidewinder",
+            "type": "air_to_air_missile",
+            "damage": 120
+          },
+          {
+            "slot": 1,
+            "id": "aim9x",
+            "name": "AIM-9X Sidewinder",
+            "type": "air_to_air_missile",
+            "damage": 120
+          },
+          {
+            "slot": 2,
+            "id": "aim120",
+            "name": "AIM-120 AMRAAM",
+            "type": "air_to_air_missile",
+            "damage": 200
+          },
+          {
+            "slot": 3,
+            "id": "gun_m61",
+            "name": "M61A1 Vulcan",
+            "type": "cannon",
+            "damage": 15,
+            "fire_rate": 100
+          }
+        ],
+        "utilities": [
+          {
+            "slot": 0,
+            "id": "flares",
+            "name": "Countermeasure Flares",
+            "type": "defensive",
+            "charges": 6
+          },
+          {
+            "slot": 1,
+            "id": "ecm_pod",
+            "name": "ECM Jamming Pod",
+            "type": "defensive",
+            "duration": 12
+          },
+          {
+            "slot": 2,
+            "id": "fuel_tank",
+            "name": "External Fuel Tank",
+            "type": "support",
+            "effect": "Extended Range"
+          }
+        ]
+      },
+      
+      
+      "achievements": {
+        "ace_status": true,
+        "missions_completed": 24,
+        "kill_count": 18,
+        "flight_hours": 42.5
+      }
+    },
+    
+    
+    "rendering": {
+      "model_complexity": "high",
+      "lod_levels": 4,
+      "texture_sets": ["default", "damaged", "weathered"],
+      "animation_sets": ["flight", "combat", "damaged", "destroyed"],
+      "effects_sockets": {
+        "exhaust": [0, -0.2, -7.5],
+        "wingtip_left": [-4.98, 0, -2.1],
+        "wingtip_right": [4.98, 0, -2.1],
+        "weapons": [
+          [1.5, -0.8, -1],
+          [-1.5, -0.8, -1],
+          [3, -0.6, 0],
+          [-3, -0.6, 0]
+        ]
+      }
+    }
+  }
+  
+  
+  {
+    "name": "B-2 Spirit #013",
+    "description": "A strategic stealth bomber with low observable technology designed to penetrate dense anti-aircraft defenses. This particular aircraft carries an advanced sensor suite.",
+    "image": "ipfs://QmNwFXYpJEeEXdSzgEX3eMuMivtNY7HHQxZ9NbK8HWYznQ/b2_013.png",
+    "animation_url": "ipfs://QmT8JkGNnZxrwkZwy7aLYbGDvMxVLjNJMHW9CKxwZvs7TX/b2_013.glb",
+    "external_url": "https://skywars.example.com/aircraft/013",
+    "background_color": "000000",
+    
+    // Game-specific attributes
+    "attributes": [
+      {
+        "trait_type": "Aircraft Model",
+        "value": "B-2A"
+      },
+      {
+        "trait_type": "Manufacturer",
+        "value": "Northrop Grumman"
+      },
+      {
+        "trait_type": "Class",
+        "value": "Stealth Bomber"
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Legendary",
+        "rarity_value": 5
+      },
+      {
+        "trait_type": "Level",
+        "value": 12,
+        "max_value": 50
+      },
+      {
+        "trait_type": "Health",
+        "value": 650,
+        "max_value": 1000
+      },
+      {
+        "trait_type": "Speed",
+        "value": 630,
+        "max_value": 1000,
+        "display_type": "boost_number"
+      },
+      {
+        "trait_type": "Handling",
+        "value": 380,
+        "max_value": 1000,
+        "display_type": "boost_number"
+      },
+      {
+        "trait_type": "Acceleration",
+        "value": 320,
+        "max_value": 1000,
+        "display_type": "boost_number"
+      },
+      {
+        "trait_type": "Defense",
+        "value": 820,
+        "max_value": 1000,
+        "display_type": "boost_number"
+      },
+      {
+        "trait_type": "Weapon Slots",
+        "value": 8,
+        "max_value": 8
+      },
+      {
+        "trait_type": "Utility Slots",
+        "value": 6,
+        "max_value": 6
+      },
+      {
+        "trait_type": "Experience",
+        "value": 3240,
+        "display_type": "number"
+      },
+      {
+        "trait_type": "Production Date",
+        "value": 1675209600,
+        "display_type": "date"
+      }
+    ],
+    
+    // Custom Skywars-specific properties
+    "skywars_properties": {
+      "model_id": "b2a",
+      
+      // Aircraft dimensions
+      "dimensions": {
+        "length": 21.0,
+        "wingspan": 52.4,
+        "height": 5.18,
+        "unit": "meters"
+      },
+      
+      // Customization state
+      "customizations": {
+        "skin": "midnight_black",
+        "decals": ["usaf_insignia", "ghost_squadron"],
+        "special_effects": ["stealth_field"]
+      },
+      
+      // Upgrade records
+      "upgrades": {
+        "engine": {
+          "level": 2,
+          "name": "F118-GE Advanced",
+          "effects": [
+            {"attribute": "speed", "bonus": 30},
+            {"attribute": "fuel_efficiency", "bonus": 15}
+          ]
+        },
+        "stealth_systems": {
+          "level": 4,
+          "name": "Advanced Radar Absorption",
+          "effects": [
+            {"attribute": "radar_signature", "bonus": -75},
+            {"attribute": "detection_range", "bonus": -60}
+          ]
+        },
+        "avionics": {
+          "level": 3,
+          "name": "AESA Suite",
+          "effects": [
+            {"attribute": "targeting_range", "bonus": 50},
+            {"attribute": "radar_penetration", "bonus": 40}
+          ]
+        },
+        "bomb_bay": {
+          "level": 3,
+          "name": "Expanded Weapons Bay",
+          "effects": [
+            {"attribute": "weapon_slots", "bonus": 2},
+            {"attribute": "payload_capacity", "bonus": 4000}
+          ]
+        }
+      },
+      
+      // Equipment loadout
+      "loadout": {
+        "weapons": [
+          {
+            "slot": 0,
+            "id": "agm158_jassm",
+            "name": "AGM-158 JASSM",
+            "type": "cruise_missile",
+            "damage": 350
+          },
+          {
+            "slot": 1,
+            "id": "agm158_jassm",
+            "name": "AGM-158 JASSM",
+            "type": "cruise_missile",
+            "damage": 350
+          },
+          {
+            "slot": 2,
+            "id": "gbu31",
+            "name": "GBU-31 JDAM",
+            "type": "guided_bomb",
+            "damage": 250
+          },
+          {
+            "slot": 3,
+            "id": "gbu31",
+            "name": "GBU-31 JDAM",
+            "type": "guided_bomb",
+            "damage": 250
+          },
+          {
+            "slot": 4,
+            "id": "gbu31",
+            "name": "GBU-31 JDAM",
+            "type": "guided_bomb",
+            "damage": 250
+          },
+          {
+            "slot": 5,
+            "id": "gbu31",
+            "name": "GBU-31 JDAM",
+            "type": "guided_bomb",
+            "damage": 250
+          },
+          {
+            "slot": 6,
+            "id": "b61_12",
+            "name": "B61-12 Nuclear Bomb",
+            "type": "tactical_nuclear",
+            "damage": 1000
+          },
+          {
+            "slot": 7,
+            "id": "aim120",
+            "name": "AIM-120 AMRAAM",
+            "type": "air_to_air_missile",
+            "damage": 200
+          }
+        ],
+        "utilities": [
+          {
+            "slot": 0,
+            "id": "adv_ecm",
+            "name": "Advanced ECM Suite",
+            "type": "defensive",
+            "duration": 30
+          },
+          {
+            "slot": 1,
+            "id": "stealth_coating",
+            "name": "Enhanced Stealth Coating",
+            "type": "passive",
+            "effect": "Reduced Detection"
+          },
+          {
+            "slot": 2,
+            "id": "satellite_comms",
+            "name": "Satellite Communication Array",
+            "type": "support",
+            "effect": "Global Targeting"
+          },
+          {
+            "slot": 3,
+            "id": "adv_targeting",
+            "name": "Advanced Targeting Computer",
+            "type": "offensive",
+            "effect": "+25% Weapon Accuracy"
+          },
+          {
+            "slot": 4,
+            "id": "thermal_dampeners",
+            "name": "Thermal Signature Dampeners",
+            "type": "defensive",
+            "effect": "Reduced IR Detection"
+          },
+          {
+            "slot": 5,
+            "id": "extended_range",
+            "name": "Extended Range Fuel System",
+            "type": "support",
+            "effect": "+40% Flight Range"
+          }
+        ]
+      },
+      
+      // Achievement history
+      "achievements": {
+        "ace_status": true,
+        "missions_completed": 36,
+        "strategic_targets_destroyed": 28,
+        "flight_hours": 112.5
+      }
+    },
+    
+    // Rendering properties (for game engine integration)
+    "rendering": {
+      "model_complexity": "very_high",
+      "lod_levels": 5,
+      "texture_sets": ["default", "damaged", "nightops"],
+      "animation_sets": ["flight", "bombing", "damaged", "destroyed"],
+      "effects_sockets": {
+        "exhaust_left": [-5.5, 0.2, -15.0],
+        "exhaust_right": [5.5, 0.2, -15.0],
+        "weapons_bay": [0, -1.5, 0],
+        "wingtip_left": [-26.2, 0, -5.0],
+        "wingtip_right": [26.2, 0, -5.0]
+      }
+    }
+  }
